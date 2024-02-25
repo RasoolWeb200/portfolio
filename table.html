@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+       table,tr,td,th{
+        border: 2px solid black;
+        background-color: aqua;
+       }
+       table{
+        width: 600px;
+        height: 200px;
+        background-image: url(./images/tb.jpg);
+        background-size: cover;
+       }
+       th{
+        background-color: blue;
+       }
+       .rowspan{
+        background-color: brown;
+       }
+       .colspan{
+        background-color: burlywood;
+       }
+       body{
+        background-image: url(./images/bgtable.jpg);
+        background-size: cover;
+       }
+    </style>
+   
+</head>
+<body>
+    <center>
+        <h1>Simple Table</h1>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>City</th>
+                <th>Contact</th>
+                <th>Skill</th>
+            </tr>
+            <tr>
+                <td>Rasool</td>
+                <td>001</td>
+                <td>Hangu</td>
+                <td>0334</td>
+                <td>web</td>
+            </tr>
+            <tr>
+                <td>Sanan</td>
+                <td>005</td>
+                <td>mardan</td>
+                <td>0223</td>
+                <td>java</td>
+            </tr>
+            <tr>
+                <td>Nadim</td>
+                <td>004</td>
+                <td>peshawar</td>
+                <td>0324</td>
+                <td>html</td>
+            </tr>
+            <tr>
+                <td>Waqar</td>
+                <td>002</td>
+                <td>Kohat</td>
+                <td>0334</td>
+                <td>app</td>
+            </tr>
+        </table>
+        <h3>Here we use rowspan  </h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>City</th>
+                <th>Contact</th>
+                <th>Skill</th>
+            </tr>
+            <tr>
+                <td>Rasool</td>
+                <td>001</td>
+                <td>Hangu</td>
+                <td>0334</td>
+                <td>web</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="rowspan">Sanan</td>
+                <td>005</td>
+                <td>mardan</td>
+                <td>0223</td>
+                <td>java</td>
+            </tr>
+            <tr>
+                <td>Nadim</td>
+                <td>004</td>
+                <td>peshawar</td>
+                <td>0324</td>
+                
+            </tr>
+            <tr>
+                <td>Waqar</td>
+                <td>002</td>
+                <td>Kohat</td>
+                <td>0334</td>
+                <td>app</td>
+            </tr>
+        </table>
+        <h3>Here we use column span </h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Roll No</th>
+                <th>City</th>
+                <th>Contact</th>
+                <th>Skill</th>
+            </tr>
+            <tr>
+                <td>Rasool</td>
+                <td>001</td>
+                <td>Hangu</td>
+                <td>0334</td>
+                <td>web</td>
+            </tr>
+            <tr>
+                <td colspan="2" class="colspan">Sanan</td>
+                <td>005</td>
+                <td>mardan</td>
+                <td>0223</td>
+                
+            </tr>
+            <tr>
+                <td>Nadim</td>
+                <td>004</td>
+                <td>peshawar</td>
+                <td>0324</td>
+                <td>html</td>
+                
+            </tr>
+            <tr>
+                <td>Waqar</td>
+                <td>002</td>
+                <td>Kohat</td>
+                <td>0334</td>
+                <td>app</td>
+            </tr>
+        </table>
+    </center>
+   
+   
+</body>
+</html>
